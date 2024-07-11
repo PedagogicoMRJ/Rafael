@@ -5,11 +5,13 @@ using UnityEngine;
 public class Goal : MonoBehaviour
 {
     public bool isPlayerLeftGoal;
+    public AudioSource audiogoal;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.CompareTag("Ball"))
         {
-            if(!isPlayerLeftGoal)
+            audiogoal.Play();
+            if (!isPlayerLeftGoal)
             {
                 Debug.Log("PlayerLeftScored");
                 GameObject.Find("GameManager").GetComponent<GameManager>().PlayerLeftScored();

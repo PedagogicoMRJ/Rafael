@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-   public float speed;
-   public Rigidbody2D rb;
-   public Vector3 startPosition;
+    public float speed;
+    public Rigidbody2D rb;
+    public Vector3 startPosition;
+    public AudioSource audioball;
     void Start()
     {
         startPosition = transform.position;
@@ -27,6 +28,10 @@ public class Ball : MonoBehaviour
         rb.velocity = Vector2.zero;
         transform.position = startPosition;
         Launch();
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        audioball.Play();
     }
 }
 
