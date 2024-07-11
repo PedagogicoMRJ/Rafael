@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: a5693fb7d6f93504ca1848f93ea05231
+  productGUID: f12b5b5c4a89a6648900af8c19f420ad
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: PongcloneFMF
+  productName: Pong
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -233,7 +233,6 @@ PlayerSettings:
   iOSMetalForceHardShadows: 0
   metalEditorSupport: 1
   metalAPIValidation: 1
-  metalCompileShaderBinary: 0
   iOSRenderExtraFrameOnPause: 0
   iosCopyPluginsCodeInsteadOfSymlink: 0
   appleDeveloperTeamID: 
@@ -630,14 +629,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: PongcloneFMF
+  metroPackageName: Pong
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: PongcloneFMF
+  metroApplicationDescription: Pong
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -706,10 +705,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: b22c2bde-8307-401a-8b73-d3fb97cce33f
+  cloudProjectId: 42252185-fcba-4c93-8675-110e74c9ecce
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: PongcloneFMF 2024-06-19_15-12-44
+  projectName: Pong
   organizationId: alunosmyrobotjoinville
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

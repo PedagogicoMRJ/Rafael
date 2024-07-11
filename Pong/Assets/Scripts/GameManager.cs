@@ -24,17 +24,16 @@ public class GameManager : MonoBehaviour
         PlayerLeftText.GetComponent<TextMeshProUGUI>().text = PlayerLeftScore.ToString();
         ResetPosition();
     }
-    public void PlayerRightScored() { 
+    public void PlayerRightScored()
+    {
         PlayerRightScore++;
         PlayerRightText.GetComponent<TextMeshProUGUI>().text = PlayerRightScore.ToString();
         ResetPosition();
     }
-
     public void ResetPosition()
     {
         Ball.GetComponent<Ball>().Reset();
         LeftPlayer.GetComponent<Racket>().Reset();
         RightPlayer.GetComponent<Racket>().Reset();
     }
- 
 }
