@@ -8,9 +8,11 @@ public class Ball : MonoBehaviour
     public float jump;
     public bool isjumping;
     private Rigidbody2D rig;
+    private Animator anim;
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -23,19 +25,42 @@ public class Ball : MonoBehaviour
     {
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
         transform.position += movement * speed * Time.deltaTime;
+        if(Input.GetAxis("Horizontal") != 0)
+        {
+            if(Input.GetAxis("Horizontal") > 0)
+            {
+                while(Input.GetAxis("Horizontal") > 0)
+                {
+                anim.SetBool("SWalk", true);
+                transform.eulerAngles = new Vector3(0f,0f,0f);
+                }
+                anim.SetBool("SWalk", false);
+            }
+            else 
+            {
+                  while(Input.GetAxis("Horizontal") < 0)
+                {
+                anim.SetBool("SWalk", true);
+                transform.eulerAngles = new Vector3(0f,180f,0f);
+                }
+                anim.SetBool("SWalk", false);
+            }
+        }
     }
     void Jump()
     {
-       if(Input.GetButtonDown("Jump") && !isjumping) 
+       if(Input.GetButtonDown("Jump") && isjumping == false) 
         {
             rig.AddForce(new Vector2(0f, jump), ForceMode2D.Impulse);
+            anim.SetBool("jump", true);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.layer==6)
+        if(collision.gameObject.layer ==  6)
         {
             isjumping = false;
+            anim.SetBool("jump", false);
         }
     }
 }
