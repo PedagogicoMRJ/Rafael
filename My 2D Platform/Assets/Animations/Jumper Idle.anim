@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Ball desaccelerate
+  m_Name: Jumper Idle
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,11 +21,7 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 1731872814, guid: 3ef72d1a0b071734b92ad8d307f6cfe5, type: 3}
-    - time: 0.33333334
-      value: {fileID: -1466073710, guid: 3ef72d1a0b071734b92ad8d307f6cfe5, type: 3}
-    - time: 0.6666667
-      value: {fileID: -2006364790, guid: 3ef72d1a0b071734b92ad8d307f6cfe5, type: 3}
+      value: {fileID: 1637742548, guid: 6a99307f9a126bd4385e8398455b03e1, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -48,15 +44,13 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 1731872814, guid: 3ef72d1a0b071734b92ad8d307f6cfe5, type: 3}
-    - {fileID: -1466073710, guid: 3ef72d1a0b071734b92ad8d307f6cfe5, type: 3}
-    - {fileID: -2006364790, guid: 3ef72d1a0b071734b92ad8d307f6cfe5, type: 3}
+    - {fileID: 1637742548, guid: 6a99307f9a126bd4385e8398455b03e1, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.75
+    m_StopTime: 0.083333336
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

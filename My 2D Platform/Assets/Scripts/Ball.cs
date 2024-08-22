@@ -29,21 +29,11 @@ public class Ball : MonoBehaviour
         {
             if(Input.GetAxis("Horizontal") > 0)
             {
-                while(Input.GetAxis("Horizontal") > 0)
-                {
-                anim.SetBool("SWalk", true);
                 transform.eulerAngles = new Vector3(0f,0f,0f);
-                }
-                anim.SetBool("SWalk", false);
             }
             else 
             {
-                  while(Input.GetAxis("Horizontal") < 0)
-                {
-                anim.SetBool("SWalk", true);
                 transform.eulerAngles = new Vector3(0f,180f,0f);
-                }
-                anim.SetBool("SWalk", false);
             }
         }
     }
@@ -52,7 +42,6 @@ public class Ball : MonoBehaviour
        if(Input.GetButtonDown("Jump") && isjumping == false) 
         {
             rig.AddForce(new Vector2(0f, jump), ForceMode2D.Impulse);
-            anim.SetBool("jump", true);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -60,7 +49,6 @@ public class Ball : MonoBehaviour
         if(collision.gameObject.layer ==  6)
         {
             isjumping = false;
-            anim.SetBool("jump", false);
         }
     }
 }

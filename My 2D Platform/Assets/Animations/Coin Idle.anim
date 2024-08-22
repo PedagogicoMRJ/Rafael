@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Ball accelerate
+  m_Name: Coin Idle
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,11 +21,13 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -893590994, guid: 733452d8b8e51bd4e86e5f8b6986dc36, type: 3}
-    - time: 0.33333334
-      value: {fileID: 533028951, guid: 733452d8b8e51bd4e86e5f8b6986dc36, type: 3}
-    - time: 0.6666667
-      value: {fileID: 533028951, guid: 733452d8b8e51bd4e86e5f8b6986dc36, type: 3}
+      value: {fileID: -373006080, guid: a94cbbaea0e45af44918b27c80ae491d, type: 3}
+    - time: 0.083333336
+      value: {fileID: 2031339502, guid: a94cbbaea0e45af44918b27c80ae491d, type: 3}
+    - time: 0.16666667
+      value: {fileID: 1613893600, guid: a94cbbaea0e45af44918b27c80ae491d, type: 3}
+    - time: 0.25
+      value: {fileID: -372638464, guid: a94cbbaea0e45af44918b27c80ae491d, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -48,15 +50,16 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -893590994, guid: 733452d8b8e51bd4e86e5f8b6986dc36, type: 3}
-    - {fileID: 533028951, guid: 733452d8b8e51bd4e86e5f8b6986dc36, type: 3}
-    - {fileID: 533028951, guid: 733452d8b8e51bd4e86e5f8b6986dc36, type: 3}
+    - {fileID: -373006080, guid: a94cbbaea0e45af44918b27c80ae491d, type: 3}
+    - {fileID: 2031339502, guid: a94cbbaea0e45af44918b27c80ae491d, type: 3}
+    - {fileID: 1613893600, guid: a94cbbaea0e45af44918b27c80ae491d, type: 3}
+    - {fileID: -372638464, guid: a94cbbaea0e45af44918b27c80ae491d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.75
+    m_StopTime: 0.33333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
