@@ -7,8 +7,10 @@ public class GameManager : MonoBehaviour
 {
   public int totalscore;
   public Text scoreboard;
+  public Text scoreboard2;
   public static GameManager access;
   public GameObject gameover;
+  public GameObject gamewin;
 
   void Start()
   {
@@ -17,6 +19,7 @@ public class GameManager : MonoBehaviour
   public void ScoreBoard()
   {
     scoreboard.text = totalscore.ToString();
+    scoreboard2.text = totalscore.ToString();
   }
   public void GameOver()
   {
@@ -25,5 +28,9 @@ public class GameManager : MonoBehaviour
   public void Restart()
   {
     SceneManager.LoadScene("SampleScene");
+  }
+  public void GameWin()
+  {
+    gamewin.SetActive(true);
   }
 }

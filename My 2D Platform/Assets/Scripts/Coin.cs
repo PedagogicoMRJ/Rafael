@@ -6,6 +6,7 @@ public class Coin : MonoBehaviour
 {
     public int score;
     private Animator anim;
+    public AudioSource audioCoin;
     void Start()
     {
          anim = GetComponent<Animator>();
@@ -18,6 +19,7 @@ public class Coin : MonoBehaviour
             GameManager.access.totalscore += score;
             GameManager.access.ScoreBoard();
             Destroy(gameObject);
+            audioCoin.Play();
         }
    }
 }

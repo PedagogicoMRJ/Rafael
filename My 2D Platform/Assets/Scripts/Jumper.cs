@@ -6,6 +6,7 @@ public class Jumper : MonoBehaviour
 {
     private Animator anim;  
     public float jumpforce;  
+    public AudioSource audioJumper;
     void Start()
     {
        anim = GetComponent<Animator>();
@@ -18,6 +19,7 @@ public class Jumper : MonoBehaviour
         {
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0f,jumpforce),ForceMode2D.Impulse);
             anim.SetTrigger("Pump");
+            audioJumper.Play();
         }
     }
 }

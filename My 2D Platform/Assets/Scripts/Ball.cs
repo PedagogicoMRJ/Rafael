@@ -10,11 +10,16 @@ public class Ball : MonoBehaviour
     private Rigidbody2D rig;
     private Animator anim;
     private bool died;
+    public static Ball access;
+    public AudioSource audioJump;
+    public AudioSource audioDie;
+    public AudioSource audioWin;
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         died = false;
+        access = this;
     }
 
     // Update is called once per frame
@@ -47,6 +52,7 @@ public class Ball : MonoBehaviour
         {
             rig.AddForce(new Vector2(0f, jump), ForceMode2D.Impulse);
             isjumping = true;
+            audioJump.Play();
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -59,12 +65,13 @@ public class Ball : MonoBehaviour
         {
             anim.SetTrigger("Die");
             died = true;
+            audioDie.Play();
             GameManager.access.GameOver();
         }
-        /*if(collision.gameObject.layer ==  8) 
+        if(collision.gameObject.layer ==  8)
         {
-            rig.Mass = -rig.Mass;
-            transform.eulerAngles = new Vector3(180f,180f,0f);
-        }*/
+            GameManager.access.GameWin();
+            audioWin.Play();
+        }
     }
 }
