@@ -7,13 +7,17 @@ public class PlayerController : MonoBehaviour
     [Header("Car Settings")]
     public float accelerationFactor = 30f;
     public float turnFactor = 3.5f;
-    public float driftFactor = 1f;
+    public float driftFactor = 0.95f;
     public float maxSpeed = 30;
     float accelerationInput = 0;
     float steeringInput = 0;
     float rotationAngle = 0;
     float velocityUp = 0;
     Rigidbody2D carRig;
+    void Start()
+    {
+        transform.eulerAngles = new Vector3(0f,0f,90f);
+    }
     private void Awake()
     {
         carRig = GetComponent<Rigidbody2D>();
