@@ -8,11 +8,16 @@ public class LapCounter : MonoBehaviour
      int nCheckpoint;
      int nPassedcheckpoints;
     float TimeCheckpointPassed;
-    int lapsCompleted = -1;
-    bool isRaceCompleted = false;
-    const int allLaps = 77;
+    public int lapsCompleted = 0;
+    public bool isRaceCompleted = false;
+    public int allLaps = 77;
     int carPosition = 0;
     public event Action<LapCounter> OnPassCheckpoint;
+    public static LapCounter access;
+    void Start()
+    {
+        access = this;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Checkpoint"))
@@ -29,6 +34,10 @@ public class LapCounter : MonoBehaviour
                 {
                     nCheckpoint = 0;
                     lapsCompleted++;
+                    if (lapsCompleted + 1 > LapScore.access.lap)
+                    {
+                    LapScore.access.lap = lapsCompleted;
+                    LapScore.access.LapCounter();                    }
                     Debug.Log($"{gameObject.name} fez {lapsCompleted} voltas");
                     if (lapsCompleted >= allLaps)
                     {
