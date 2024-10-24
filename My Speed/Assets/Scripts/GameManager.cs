@@ -6,8 +6,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject image;
-    void Start()
+    public void Start()
     {
         SceneManager.LoadScene("Game");
     }
@@ -18,16 +17,5 @@ public class GameManager : MonoBehaviour
     public void Exit()
     {
         Application.Quit();
-    }
-    public void Menu()
-    {
-        SceneManager.LoadScene("Game");
-    }
-    void Update()
-    {
-        if (LapCounter.access.isRaceCompleted == true)
-        {
-            image.SetActive(true);
-        }
     }
 }

@@ -5,8 +5,8 @@ using System;
 
 public class LapCounter : MonoBehaviour
 {
-     int nCheckpoint;
-     int nPassedcheckpoints;
+    int nCheckpoint;
+    int nPassedcheckpoints;
     float TimeCheckpointPassed;
     public int lapsCompleted = 0;
     public bool isRaceCompleted = false;
@@ -22,8 +22,8 @@ public class LapCounter : MonoBehaviour
     {
         if (collision.CompareTag("Checkpoint"))
         {
-            if(isRaceCompleted)
-            return;
+            if (isRaceCompleted)
+                return;
             Checkpoint checkpoint = collision.GetComponent<Checkpoint>();
             if (nCheckpoint + 1 == checkpoint.nCheckpoint)
             {
@@ -36,8 +36,9 @@ public class LapCounter : MonoBehaviour
                     lapsCompleted++;
                     if (lapsCompleted + 1 > LapScore.access.lap)
                     {
-                    LapScore.access.lap = lapsCompleted;
-                    LapScore.access.LapCounter();                    }
+                        LapScore.access.lap = lapsCompleted;
+                        LapScore.access.lapcounter();
+                    }
                     Debug.Log($"{gameObject.name} fez {lapsCompleted} voltas");
                     if (lapsCompleted >= allLaps)
                     {
@@ -61,4 +62,4 @@ public class LapCounter : MonoBehaviour
     {
         return TimeCheckpointPassed;
     }
-}    
+}
