@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class Apple : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-        private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-            Debug.Log("Maçã morreu de morte comida");
-            Destroy(gameObject);
+        Debug.Log("Maçã morreu de morte comida");
+        GameManager.access.totalscore += 1;
+        GameManager.access.Scoreboard();
+        Destroy(gameObject);
     }
 }
