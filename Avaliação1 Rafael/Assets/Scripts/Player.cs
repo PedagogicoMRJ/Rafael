@@ -5,12 +5,6 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float speed;
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         MovementX();
@@ -26,11 +20,6 @@ public class Player : MonoBehaviour
         Vector3 movementY = new Vector3(0f, Input.GetAxis("Vertical"), 0f);
         transform.position += movementY * speed * Time.deltaTime;
     }
-    /*void ReStart()
-    {
-        GameManager.access.isPlayerDead = true;
-        Debug.Log("ygvvhgh");
-    }*/
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Trap")
