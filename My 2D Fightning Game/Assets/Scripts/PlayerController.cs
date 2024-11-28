@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public bool isPlayer1;
     bool isAttack = false;
+    bool isKnockback = false;
     string attack = "None";
     public float speed;
     private Animator anim;
@@ -19,18 +21,27 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (isAttack = true)
+        if (isAttack)
         {
             if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
             {
                 isAttack = false;
+                Debug.Log("isAttack = false");
+            }
+        }
+        if (isKnockback)
+        {
+            if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
+            {
+                isKnockback = false;
+                Debug.Log("isKnockback = false");
             }
         }
     }
     // Update is called once per frame
     void Update()
     {
-        if (isAttack == false)
+        if (!isAttack && !isKnockback)
         {
             Movement();
             Attack();
@@ -38,38 +49,76 @@ public class PlayerController : MonoBehaviour
     }
     void Movement()
     {
-        move = Input.GetAxis("Horizontal");
+        if (isPlayer1)
+            move = Input.GetAxis("Horizontal1");
+        else
+            move = Input.GetAxis("Horizontal2");
         rig.velocity = new Vector2(move * speed, 0f);
         anim.SetFloat("Walk", move);
     }
-    void Attack()
+    public enum AttackType
+{
+    None,
+    LP,  // Light Punch
+    HP,  // Heavy Punch
+    LK,  // Light Kick
+    HK,  // Heavy Kick
+    Block // Blocking
+}
+
+public AttackType currentAttack = AttackType.None;
+
+void Attack()
+{
+    if (isPlayer1)
     {
-        if (Input.GetKeyDown(KeyCode.Q))
-        attack = "LP";
-        else if (Input.GetKeyDown(KeyCode.W))
-        attack = "HP";
-        else if (Input.GetKeyDown(KeyCode.E))
-        attack = "LK";
-        else if (Input.GetKeyDown(KeyCode.R))
-        attack = "HK";
-        else if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.Q)) currentAttack = AttackType.LP;
+        else if (Input.GetKeyDown(KeyCode.W)) currentAttack = AttackType.HP;
+        else if (Input.GetKeyDown(KeyCode.E)) currentAttack = AttackType.LK;
+        else if (Input.GetKeyDown(KeyCode.R)) currentAttack = AttackType.HK;
+        else if (Input.GetKeyDown(KeyCode.T)) 
         {
-            attack = "Block";
+            currentAttack = AttackType.Block;
             block = true;
         }
-        else
+        else currentAttack = AttackType.None;
+    }
+    else
+    {
+        if (Input.GetKeyDown(KeyCode.KeyPad4)) currentAttack = AttackType.LP;
+        else if (Input.GetKeyDown(KeyCode.KeyPad5)) currentAttack = AttackType.HP;
+        else if (Input.GetKeyDown(KeyCode.KeyPad1)) currentAttack = AttackType.LK;
+        else if (Input.GetKeyDown(KeyCode.KeyPad2)) currentAttack = AttackType.HK;
+        else if (Input.GetKeyDown(KeyCode.KeyPad0)) 
         {
-            attack = "None";
-            block = false;
+            currentAttack = AttackType.Block;
+            block = true;
         }
-        
-        if (attack != "None")
+        else currentAttack = AttackType.None;
+    }
+
+    if (currentAttack != AttackType.None)
+    {
+        move = 0;
+        rig.velocity = new Vector2(move * speed, 0f);
+        anim.SetFloat("Walk", move);
+        anim.SetTrigger(currentAttack.ToString());
+        isAttack = true;
+        block = false;
+    }
+}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        move = 0;
+        rig.velocity = new Vector2(0f, 0f);
+        anim.SetFloat("Walk", move);
+        if (collision.gameObject.layer == 3)
         {
-            move = 0;
-            rig.velocity = new Vector2(move*speed, 0f);
-            anim.SetFloat("Walk", move);
-            anim.SetTrigger(attack);
-            isAttack = true;
+            anim.SetBool("Knockback", true);
+            if (isPlayer1)
+                rig.velocity = new Vector2(-speed * 3, 0f);
+            else
+                rig.velocity = new Vector2(speed * 3, 0f);
         }
     }
 }
