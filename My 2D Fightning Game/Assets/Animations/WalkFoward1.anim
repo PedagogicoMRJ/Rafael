@@ -57,15 +57,6 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.6666667
-        value: -0.3
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -85,10 +76,6 @@ AnimationClip:
       value: {fileID: -1637317816, guid: a7016814a99beb744887808b181d2b1a, type: 3}
     - time: 0.5
       value: {fileID: 446767941, guid: a7016814a99beb744887808b181d2b1a, type: 3}
-    - time: 0.6666667
-      value: {fileID: 1471525713, guid: a7016814a99beb744887808b181d2b1a, type: 3}
-    - time: 0.8333333
-      value: {fileID: -1620799711, guid: a7016814a99beb744887808b181d2b1a, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -124,14 +111,12 @@ AnimationClip:
     - {fileID: -1750524308, guid: a7016814a99beb744887808b181d2b1a, type: 3}
     - {fileID: -1637317816, guid: a7016814a99beb744887808b181d2b1a, type: 3}
     - {fileID: 446767941, guid: a7016814a99beb744887808b181d2b1a, type: 3}
-    - {fileID: 1471525713, guid: a7016814a99beb744887808b181d2b1a, type: 3}
-    - {fileID: -1620799711, guid: a7016814a99beb744887808b181d2b1a, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1
+    m_StopTime: 0.6666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -181,15 +166,6 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.5
         value: -0.225
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.6666667
-        value: -0.3
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
