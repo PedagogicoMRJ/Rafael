@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     bool isAttack = false;
     bool isKnockback = false;
     //string attack = "None";
-    public float speed;
+    public float knockback;
     private Animator anim;
     private Rigidbody2D rig;
     bool block = false;
@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     int currentHealth;
     public HealthBar healthBar;
     int attackDamage;
+    public float speed;
+    public GameObject Trophy;
     void Start()
     {
         anim = GetComponentInChildren<Animator>();
@@ -79,15 +81,16 @@ public class PlayerController : MonoBehaviour
         // Captura a entrada com base no jogador
 
         if (isPlayer1)
-        rig.velocity = new Vector2(Input.GetAxis("Horizontal1") * speed, 0); // Define velocidade
+        {
+            move = Input.GetAxis("Horizontal1");
+        }
         else
-        rig.velocity = new Vector2(Input.GetAxis("Horizontal2") * speed, 0); // Define velocidade
-        move = rig.velocity.x;
-        anim.SetFloat("Walk", Mathf.Abs(move)); // Atualiza animação
+        {
+            move = Input.GetAxis("Horizontal2");
+        }
+        rig.velocity = new Vector2(move * speed, 0.0f);
+        anim.SetFloat("Walk", move);
     }
-
-    // Debug para verificar o valor do eixo
-
     public enum AttackType
     {
         None,
@@ -138,8 +141,9 @@ public class PlayerController : MonoBehaviour
         move = 0;
         rig.velocity = new Vector2(0.0f, 0.0f);
         anim.SetFloat("Walk", move);
-        if (collision.gameObject.layer == 3)
+        if (collision.gameObject.layer == 10)
         {
+            Debug.Log("Colisão");
             if (block == true)
             {
                 currentHealth -= attackDamage / 4;
@@ -152,11 +156,11 @@ public class PlayerController : MonoBehaviour
                     anim.SetBool("Knockback", true);
                     if (isPlayer1)
                     {
-                        rig.velocity = new Vector2(speed * (-1), 0.0f);
+                        rig.velocity = new Vector2(knockback * (-1), 0.0f);
                     }
                     else
                     {
-                        rig.velocity = new Vector2(speed, 0f);
+                        rig.velocity = new Vector2(knockback, 0f);
                     }
                     isKnockback = true;
                 }
@@ -170,5 +174,6 @@ public class PlayerController : MonoBehaviour
         yield return threeSec;
         anim.SetBool("Defeat", false);
         SceneManager.LoadScene(0);
+        Trophy.SetActive(true);
     }
 }
