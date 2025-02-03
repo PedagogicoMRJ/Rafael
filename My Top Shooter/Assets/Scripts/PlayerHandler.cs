@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerHandler : MonoBehaviour
 {
     Vector2 inputVector = Vector2.zero;
+    Controller playerController;
     void Start()
     {
         playerController = GetComponent<Controller>();
