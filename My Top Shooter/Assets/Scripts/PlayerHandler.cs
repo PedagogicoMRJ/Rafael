@@ -17,11 +17,11 @@ public class PlayerHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(1))
         {
             inputVector = Vector2.zero;
             mouseVector = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            aiming = false;
+            aiming = true;
         }
         else
         {
@@ -29,9 +29,9 @@ public class PlayerHandler : MonoBehaviour
             inputVector.y = Input.GetAxis("Vertical");
             playerController.SetInputVector(inputVector);
             mouseVector = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            aiming = true;
+            aiming = false;
         }
         playerController.SetVectors(inputVector, mouseVector, aiming);
-        Debug.Log(aiming);
+
     }
 }

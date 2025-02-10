@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Controller : MonoBehaviour
 {
+    Bullet bulletParameters;
     public float velocity = 5;
     Vector2 movement;
     Vector2 aim;
@@ -15,23 +16,25 @@ public class Controller : MonoBehaviour
     public GameObject crosshair;
     void Start()
     {
+        bulletParameters = GetComponentInChildren<Bullet>();
         bodyRig = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
-        crosshair.SetActive(true);
+        crosshair.SetActive(false);
         Cursor.visible = false;
     }
     void Update()
     {
         playerPosition = transform.position;
         if (isAiming)
-            Movement();
-        else
             Aiming();
+        else
+            Movement();
         crosshair.transform.position = aim;
     }
 
     void Movement()
     {
+        crosshair.SetActive(false);
         if (movement.x != 0 && movement.y != 0)
         {
             bodyRig.velocity = new Vector2(movement.x, movement.y) * 7f;
@@ -60,9 +63,16 @@ public class Controller : MonoBehaviour
     public void Aiming()
     {
         aimDirection = aim - playerPosition;
+        aimDirection.Normalize();
+        crosshair.SetActive(true);
         bodyRig.velocity = Vector2.zero;
         anim.SetBool("Aim", true);
         anim.SetFloat("aimHorizontal", aimDirection.x);
         anim.SetFloat("aimVertical", aimDirection.y);
+        crosshair.transform.position = aim;
+        if (Input.GetMouseButton(0))
+        {
+            bulletParameters.fireBullet(aimDirection);
+        }
     }
 }
