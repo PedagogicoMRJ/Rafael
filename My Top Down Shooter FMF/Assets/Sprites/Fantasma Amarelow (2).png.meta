@@ -1,0 +1,1657 @@
+fileFormatVersion: 2
+guid: 2dce415ac14ee494f855daf89019d541
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 264
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9041495c27ba448867506bd6c3af5c
+      internalID: -352477740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 262
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07b8a89d2da3cc34fb0926024d4362cc
+      internalID: 1368451285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 261
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd368947b296d9242a250ae950494034
+      internalID: -276369875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 261
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a532f31c1bc37b41b1d911445937568
+      internalID: 28634626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_4
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 260
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae9c79ef07990d42a80cd21d756e752
+      internalID: -550289343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_5
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 259
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec8c164752a9974e86de4d0f2b75f85
+      internalID: -650804695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_6
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 258
+        width: 12
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9abc1e46bf2121245b050a1a1f8a8f90
+      internalID: 1016004662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_7
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 262
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b785435b995a349a8c037d5645752f
+      internalID: -1155061212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 230
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfb67e9f3469ae4ba25cd35d73606fb
+      internalID: -592086539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_9
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 229
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5f51564f7b26b4887d201d0b97dd87
+      internalID: 828943207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_10
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 229
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a7a61369247bd489da04898b5b3c09
+      internalID: -1999540773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_11
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 228
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd4aeb28e9b5f04a82290e9bebbcbce
+      internalID: 19083086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_12
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 227
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a48716738ad11645ad09d1e67fd3869
+      internalID: -825762011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_13
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 228
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17f3fcee5b88bc4384cba48e9e9da5b
+      internalID: -110389107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_14
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 229
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2ea3e4dcf3d96479ddd9457aa424ed
+      internalID: 1697026179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_15
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 229
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9adef912f28cf4a9141b6c8ccd853e
+      internalID: -73097073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_16
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 198
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1725971ef42224f8573cbee54689a8
+      internalID: 722380640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_17
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 198
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6580660553e2c0f41a0130c62d5ef120
+      internalID: 945684772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_18
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 199
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2ad88b2a084e44ca4f298d8d7d7e34
+      internalID: 1677485629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_19
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 198
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89fc625187dfa204d8702cf7fd38229e
+      internalID: -639700554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_20
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 197
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f866372b7337d459b56d99893ece29
+      internalID: -1594208063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_21
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 196
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed93b80d12871d48a1a42ad0aaadd1d
+      internalID: -280285093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_22
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 195
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681f386616feee245a53e228640f8d9b
+      internalID: -83359160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_23
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 195
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d80413acfe2d8441bdf399abe06cbb4
+      internalID: -513747542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_24
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 163
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69e0706c443d2147adf0b09bd576863
+      internalID: 1487151675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_25
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 166
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7454f248fe0a1b344b4717b250f98254
+      internalID: -1339316075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_26
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 165
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ffa6ec9284018438759e2ad5a024c0
+      internalID: -1627745549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_27
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 165
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140767560051cbe42a195a82e7b30033
+      internalID: 202942513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_28
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 164
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff27eb18e5fc3a4e96f5dea8a7596da
+      internalID: -854748054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_29
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 164
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7ecc07938481043b5f9edc04a14bce
+      internalID: -572718792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_30
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 164
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a533ad80972abc44b594277d01feed3
+      internalID: 1443346451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_31
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 166
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85130367350b370498ca128d728cfaee
+      internalID: 479315401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_32
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 133
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8c4f116023fb847a1c1c4e1978cf79
+      internalID: -2060805110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_33
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 133
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49884380cae03184b89c85a3db89eebd
+      internalID: 1947525018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_34
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 132
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1d19079d9e54a46ab7cd3ec6bb52a4
+      internalID: -516609588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_35
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 132
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f36873e2d1a864da49f8ca295910c4
+      internalID: 187169325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_36
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 132
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f755f54af7a3849a1c93c1e4d4c614
+      internalID: 896380465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_37
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 134
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc6624e800d9a3549b619bcdc8b95870
+      internalID: -542723728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_38
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 133
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133a22fb8e449cf4f83cb4b11c36f350
+      internalID: 1601840199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_39
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 133
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ad2cd8f6493d7458fe19cdd58780e2
+      internalID: 1899532071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_40
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 100
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8b25cb30ea3784fa03a8f0ee9d356d
+      internalID: -488226100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_41
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 100
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e013928868b974c872ae70941cd87e
+      internalID: 693879173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_42
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 100
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d12b8753724c1e545adb0208945df68d
+      internalID: -258890162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_43
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 100
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0e5c6dfb446d84a8aacd666d646328
+      internalID: 2113963296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_44
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 100
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e83fee0bccdd24f915788960f8a7e9
+      internalID: -1052950988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_45
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 102
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92935117a60021345886825ebe5e164d
+      internalID: -1403343467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_46
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 60
+        width: 20
+        height: 35
+      alignment: 9
+      pivot: {x: 0.52653503, y: 0.43366474}
+      border: {x: 0, y: 3, z: 0, w: 2}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66440b10ea9850478d103e152c8cd68
+      internalID: -1125230902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_47
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 96
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce34c5be2c7d30b4f96d8973dfd2f158
+      internalID: -962292200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_48
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 76
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ca364b9e6ff4040a76df3151a469f1
+      internalID: -1900655118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_49
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 73
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403bc4c8c374b454abb81dcc7936eafe
+      internalID: -1898498755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_50
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 73
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc181ddf133f1844b5b5a1e20aa192d
+      internalID: 967938470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_51
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 73
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58925b77d78f056469b2dfa3ff42372c
+      internalID: 12074285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_52
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 64
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32c68ff70e30f949a9254abc57ccc10
+      internalID: 858895649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_53
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 80
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538d687cb97f97448b8572abefe3d0c6
+      internalID: -541163860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_54
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 64
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e29b26e20d22cc42807dea190994e77
+      internalID: 2130198629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_57
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 70
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f73fa421a4d4404daf98b239ba7e82e
+      internalID: -514039308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_58
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 35
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2884f44cee86bb44890d63c685e4eb9f
+      internalID: 630457876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_60
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 50
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d4e6ea8d90197439ce7185dd2917ba
+      internalID: 7421704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_61
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 50
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83038ab1de4982044a2feaacf1cc9fda
+      internalID: -1450585842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_62
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 39
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4716bbf09668cad4ba8847cb5920e970
+      internalID: 171426191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_63
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 39
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a986bcd41b39b2e448fbeb6499bc2b71
+      internalID: 1524583998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_64
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 39
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7aba306a1dbb4641b01d1d9dbbbb3c8
+      internalID: 1967610852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_65
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 39
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c0c364049de154c9c0ef091af888ab
+      internalID: 98296909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_66
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 34
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c574fb044f46e4c42a65cbcad22c0c4d
+      internalID: 733351743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_67
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 45
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a148c9284dfc646af0ed36206a9a74
+      internalID: -480395597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_68
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 34
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a03f6c177f76154ba263cf833b47084
+      internalID: -1935986942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_69
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 34
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86992e3cc7d1d294d94a4aa1d427f196
+      internalID: 1079342376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_70
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 7
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd19e45f5390c74ab603c08f48a53ed
+      internalID: -1519874565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_71
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 7
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf530de16ec4df043bfb2f525f7d27f9
+      internalID: -2064301016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma Amarelow (2)_72
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 95
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d82b2adfb514b4491a266738e68129
+      internalID: -2127349696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Fantasma Amarelow (2)_0: -352477740
+      Fantasma Amarelow (2)_1: 1368451285
+      Fantasma Amarelow (2)_10: -1999540773
+      Fantasma Amarelow (2)_11: 19083086
+      Fantasma Amarelow (2)_12: -825762011
+      Fantasma Amarelow (2)_13: -110389107
+      Fantasma Amarelow (2)_14: 1697026179
+      Fantasma Amarelow (2)_15: -73097073
+      Fantasma Amarelow (2)_16: 722380640
+      Fantasma Amarelow (2)_17: 945684772
+      Fantasma Amarelow (2)_18: 1677485629
+      Fantasma Amarelow (2)_19: -639700554
+      Fantasma Amarelow (2)_2: -276369875
+      Fantasma Amarelow (2)_20: -1594208063
+      Fantasma Amarelow (2)_21: -280285093
+      Fantasma Amarelow (2)_22: -83359160
+      Fantasma Amarelow (2)_23: -513747542
+      Fantasma Amarelow (2)_24: 1487151675
+      Fantasma Amarelow (2)_25: -1339316075
+      Fantasma Amarelow (2)_26: -1627745549
+      Fantasma Amarelow (2)_27: 202942513
+      Fantasma Amarelow (2)_28: -854748054
+      Fantasma Amarelow (2)_29: -572718792
+      Fantasma Amarelow (2)_3: 28634626
+      Fantasma Amarelow (2)_30: 1443346451
+      Fantasma Amarelow (2)_31: 479315401
+      Fantasma Amarelow (2)_32: -2060805110
+      Fantasma Amarelow (2)_33: 1947525018
+      Fantasma Amarelow (2)_34: -516609588
+      Fantasma Amarelow (2)_35: 187169325
+      Fantasma Amarelow (2)_36: 896380465
+      Fantasma Amarelow (2)_37: -542723728
+      Fantasma Amarelow (2)_38: 1601840199
+      Fantasma Amarelow (2)_39: 1899532071
+      Fantasma Amarelow (2)_4: -550289343
+      Fantasma Amarelow (2)_40: -488226100
+      Fantasma Amarelow (2)_41: 693879173
+      Fantasma Amarelow (2)_42: -258890162
+      Fantasma Amarelow (2)_43: 2113963296
+      Fantasma Amarelow (2)_44: -1052950988
+      Fantasma Amarelow (2)_45: -1403343467
+      Fantasma Amarelow (2)_46: -1125230902
+      Fantasma Amarelow (2)_47: -962292200
+      Fantasma Amarelow (2)_48: -1900655118
+      Fantasma Amarelow (2)_49: -1898498755
+      Fantasma Amarelow (2)_5: -650804695
+      Fantasma Amarelow (2)_50: 967938470
+      Fantasma Amarelow (2)_51: 12074285
+      Fantasma Amarelow (2)_52: 858895649
+      Fantasma Amarelow (2)_53: -541163860
+      Fantasma Amarelow (2)_54: 2130198629
+      Fantasma Amarelow (2)_55: -1072955208
+      Fantasma Amarelow (2)_56: -337243
+      Fantasma Amarelow (2)_57: -514039308
+      Fantasma Amarelow (2)_58: 630457876
+      Fantasma Amarelow (2)_59: -2113176218
+      Fantasma Amarelow (2)_6: 1016004662
+      Fantasma Amarelow (2)_60: 7421704
+      Fantasma Amarelow (2)_61: -1450585842
+      Fantasma Amarelow (2)_62: 171426191
+      Fantasma Amarelow (2)_63: 1524583998
+      Fantasma Amarelow (2)_64: 1967610852
+      Fantasma Amarelow (2)_65: 98296909
+      Fantasma Amarelow (2)_66: 733351743
+      Fantasma Amarelow (2)_67: -480395597
+      Fantasma Amarelow (2)_68: -1935986942
+      Fantasma Amarelow (2)_69: 1079342376
+      Fantasma Amarelow (2)_7: -1155061212
+      Fantasma Amarelow (2)_70: -1519874565
+      Fantasma Amarelow (2)_71: -2064301016
+      Fantasma Amarelow (2)_72: -2127349696
+      Fantasma Amarelow (2)_8: -592086539
+      Fantasma Amarelow (2)_9: 828943207
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
