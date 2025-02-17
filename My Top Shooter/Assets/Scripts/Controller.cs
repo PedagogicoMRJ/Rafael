@@ -17,7 +17,7 @@ public class Controller : MonoBehaviour
     public GameObject crosshair;
     void Start()
     {
-        reloadTime = .5f;
+        reloadTime = 0f;
         bulletParameters = GetComponentInChildren<Bullet>();
         bodyRig = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
@@ -73,7 +73,7 @@ public class Controller : MonoBehaviour
         anim.SetFloat("aimHorizontal", aimDirection.x);
         anim.SetFloat("aimVertical", aimDirection.y);
         crosshair.transform.position = aim;
-        if (Input.GetMouseButton(0) && reloadTime >= .5f)
+        if (Input.GetMouseButton(0) && reloadTime >= .25f)
         {
             reloadTime = 0f;
             bulletParameters.fireBullet(aimDirection);
