@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class EnemyHandler : MonoBehaviour
 {
@@ -25,8 +27,9 @@ public class EnemyHandler : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Debug.Log("U Died");
-            //Debug.Log("U got f*cked");
+            //Debug.Log("U Died");
+            Debug.Log("U got f*cked");
+            SceneManager.LoadScene("Menu");
         }
     }
 }
