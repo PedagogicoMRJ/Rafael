@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class EnemyHandler : MonoBehaviour
 {
+    public System.Action killed;
     Transform playerPos;
     public float enemySpeed;
     Rigidbody2D enemyRig;
@@ -25,11 +26,14 @@ public class EnemyHandler : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.tag == "Bullet")
+        {
+            this.killed.Invoke();
+            this.gameObject.SetActive(false);
+        }
         if (collision.tag == "Player")
         {
-            //Debug.Log("U Died");
-            Debug.Log("U got f*cked");
-            SceneManager.LoadScene("Menu");
+            Debug.Log("Get Better!");
         }
     }
 }

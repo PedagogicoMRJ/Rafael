@@ -18,7 +18,7 @@ public class BulletHandler : MonoBehaviour
         {
             bulletRig.velocity = Vector2.zero;
             bulletAnim.SetTrigger("Impact");
-            Destroy(gameObject, 0.12f);
+            Destroy(gameObject, 0.30f);
         }
     }
 }

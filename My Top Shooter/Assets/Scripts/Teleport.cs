@@ -27,7 +27,7 @@ public class Teleport : MonoBehaviour
             winner = true;
         }
     }
-    private void OnTriggerEnter(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if((isActive) && collision.tag == "Player")
         {
