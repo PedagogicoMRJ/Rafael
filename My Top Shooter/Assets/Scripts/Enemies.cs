@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemies : MonoBehaviour
 {
+    public int nEnemies;
     public bool enemiesDied;
     public Teleport teleport;
     public int enemiesKilled;
@@ -12,13 +13,13 @@ public class Enemies : MonoBehaviour
     void Start()
     {
         enemiesDied = false;
-        for (int i=0; i<100; i++)
+        for (int j=0;j<2;j++)
+        for (int i=0; i< nEnemies; i++)
         {
             GameObject spawnPoint = GetRandomSpawnPoint();
-            Vector3 position = new Vector3(Random.Range(-100f,100f),Random.Range(-100f,100f),0f);
-            EnemyHandler enemy = Instantiate(this.prefabs[0], this.transform);
+            EnemyHandler enemy = Instantiate(this.prefabs[j], this.transform);
             enemy.killed += EnemyKilled;
-            enemy.transform.localPosition = position;
+            enemy.transform.localPosition = spawnPoint.transform.position;
         }
     }
     public void EnemyKilled()

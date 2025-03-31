@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6195565064779057233}
   - component: {fileID: 4033585951864259066}
   - component: {fileID: 7681631637359777028}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Skull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,4 +183,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78ce9ae246549114185cc4ce5b3caf71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 2
+  hasWalkAnim: 0
+  enemySpeed: 20
