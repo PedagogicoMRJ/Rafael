@@ -338,5 +338,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78ce9ae246549114185cc4ce5b3caf71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasWalkAnim: 0
+  hasWalkAnim: 1
   enemySpeed: 5

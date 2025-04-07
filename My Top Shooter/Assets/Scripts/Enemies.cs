@@ -13,13 +13,15 @@ public class Enemies : MonoBehaviour
     void Start()
     {
         enemiesDied = false;
-        for (int j=0;j<2;j++)
-        for (int i=0; i< nEnemies; i++)
+        for (int j = 0; j < 1; j++)
         {
-            GameObject spawnPoint = GetRandomSpawnPoint();
-            EnemyHandler enemy = Instantiate(this.prefabs[j], this.transform);
-            enemy.killed += EnemyKilled;
-            enemy.transform.localPosition = spawnPoint.transform.position;
+            for (int i = 0; i < nEnemies; i++)
+            {
+                GameObject spawnPoint = GetRandomSpawnPoint();
+                EnemyHandler enemy = Instantiate(this.prefabs[j], this.transform);
+                enemy.killed += EnemyKilled;
+                enemy.transform.localPosition = spawnPoint.transform.position;
+            }
         }
     }
     public void EnemyKilled()
