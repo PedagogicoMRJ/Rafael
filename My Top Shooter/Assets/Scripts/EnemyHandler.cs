@@ -6,7 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class EnemyHandler : MonoBehaviour
 {
+    public bool IsZombie;
+    Bullet bulletParameters;
+    int life;
     bool timer;
+    float fireCooldown;
     float wait;
     float walkTime;
     public bool hasRandomWalk;
@@ -21,15 +25,23 @@ public class EnemyHandler : MonoBehaviour
     Vector2 targetDir;
     void Start()
     {
+        bulletParameters = GetComponentInChildren<Bullet>();
         transform = GetComponent<Transform>();
         timer = false;
-        walkTime = 2f;
+        walkTime = 10f;
+        wait = 10f;
         if (hasWalkAnim)
             anim = GetComponentInChildren<Animator>();
         else
             anim = GetComponent<Animator>();
         playerPos = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         enemyRig = this.GetComponent<Rigidbody2D>();
+        if (!hasWalkAnim)
+            life = 2;
+        else if (hasRandomWalk)
+            life = 1;
+        else
+            life = 3;
     }
 
     // Update is called once per frame;
@@ -39,7 +51,7 @@ public class EnemyHandler : MonoBehaviour
         targetDir.Normalize();
         if (hasWalkAnim)
             Walk();
-        else
+        else if (!IsZombie)
         {
             Follow();
             enemyRig.velocity -= enemyRig.velocity / 200;
@@ -48,16 +60,21 @@ public class EnemyHandler : MonoBehaviour
         if (timer)
             wait += Time.deltaTime;
         if (hasRandomWalk)
-            RandomMovement();
+        { RandomMovement(); Fire(); }
+        fireCooldown += Time.deltaTime;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Bullet")
         {
-            this.killed.Invoke();
-            anim.SetTrigger("Die");
-            Destroy(gameObject, 0.5f);
-            enemyRig.velocity = Vector2.zero;
+            life -= 1;
+            if (life <= 0)
+            {
+                this.killed.Invoke();
+                anim.SetTrigger("Die");
+                Destroy(gameObject);
+                enemyRig.velocity = Vector2.zero;
+            }
         }
         if (collision.tag == "Player")
         {
@@ -79,18 +96,28 @@ public class EnemyHandler : MonoBehaviour
     }
     void RandomMovement()
     {
-        if (walkTime >=0.5f)
+        if (walkTime >= 5f)
         {
             timer = true;
-            if (wait >= 5f)
+            enemyRig.velocity = transform.up * enemySpeed;
+            if (wait >= 0.5f)
             {
                 wait = 0f;
                 quadrant = Random.Range(0, 8);
                 transform.rotation = Quaternion.identity;
                 transform.Rotate(0f, 0f, quadrant * 45f);
-                enemyRig.velocity = transform.up * enemySpeed;
                 walkTime = 0f;
+                timer = false;
             }
+        }
+    }
+    void Fire()
+    {
+        if (fireCooldown >= 5f)
+        {
+            Vector2 bulletAim = targetDir + new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f));
+            bulletParameters.fireBullet(bulletAim);
+            fireCooldown = 0f;
         }
     }
 }

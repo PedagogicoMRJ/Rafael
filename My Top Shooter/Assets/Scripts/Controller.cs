@@ -73,7 +73,7 @@ public class Controller : MonoBehaviour
         anim.SetFloat("aimHorizontal", aimDirection.x);
         anim.SetFloat("aimVertical", aimDirection.y);
         crosshair.transform.position = aim;
-        if (Input.GetMouseButton(0) && reloadTime >= .25f)
+        if (Input.GetMouseButton(0) && reloadTime >= .2f)
         {
             reloadTime = 0f;
             bulletParameters.fireBullet(aimDirection);

@@ -20,7 +20,8 @@ public class PlayerHandler : MonoBehaviour
     {
         if (Input.GetMouseButton(1))
         {
-            inputVector = Vector2.zero;
+            inputVector.x = Input.GetAxis("Horizontal");
+            inputVector.y = Input.GetAxis("Vertical");
             mouseVector = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             aiming = true;
         }
@@ -42,5 +43,7 @@ public class PlayerHandler : MonoBehaviour
             playerLive = false;
             gameManager.EndScreen(playerLive);
         }
+        if (collision.tag == "Teleport")
+        {inputVector = Vector2.zero;}
     }
 }

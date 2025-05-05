@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     bool endScreen;
     void Start()
     {
+        Time.timeScale = 1;
         winner = false;
         endScreen = false;
         canvas.SetActive(false);
@@ -32,8 +33,8 @@ public class GameManager : MonoBehaviour
     }
     public void EndScreen(bool youWin)
     {
+        Time.timeScale = 0;
         winner = youWin;
-        time = 0;
         endScreen = true;
         canvas.SetActive(true);
         bool loser = !winner;
