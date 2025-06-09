@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Teleport : MonoBehaviour
 {
+    public int level = 1;
     bool timer;
     float realTimer;
     public GameManager gameManager;
@@ -50,7 +51,9 @@ public class Teleport : MonoBehaviour
             {
                 anim.SetTrigger("Activate");
                 if (realTimer >= 0.67f)
-                gameManager.EndScreen(winner);
+                {
+                    gameManager.EndScreen(winner);
+                }
             }
         }
     }

@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public bool isFinalLevel;
+    public int level;
     public GameObject canvas;
     public GameObject win;
     public GameObject lose;
@@ -13,6 +15,7 @@ public class GameManager : MonoBehaviour
     bool endScreen;
     void Start()
     {
+        level++;
         Time.timeScale = 1;
         winner = false;
         endScreen = false;
@@ -27,7 +30,10 @@ public class GameManager : MonoBehaviour
             time += Time.deltaTime;
             if (time > 5f)
             {
-                SceneManager.LoadScene("Menu");
+                if (isFinalLevel)
+                    SceneManager.LoadScene("Menu");
+                else
+                    SceneManager.LoadScene("Lv" + level);
             }
         }
     }

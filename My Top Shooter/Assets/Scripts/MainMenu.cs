@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void Start()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Lv1");
     }
     public void Quit()
     {
@@ -16,5 +16,17 @@ public class MainMenu : MonoBehaviour
     public void Return()
     {
         SceneManager.LoadScene("Menu");
+    }
+    public void ReallyQuit()
+    {
+        SceneManager.LoadScene("ReallyQuit");
+    }
+    public void RealQuit()
+    {
+        SceneManager.LoadScene("RealQuit");
+    }
+    public void TrueQuit()
+    {
+        Application.Quit();
     }
 }

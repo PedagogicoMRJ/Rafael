@@ -1,9 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemies : MonoBehaviour
 {
+    public Text Lv;
+    public Text START;
+    public int nEnemyTypes;
+    public int level;
     WaitForSeconds cooldown;
     public int nEnemies;
     public bool enemiesDied;
@@ -11,14 +16,25 @@ public class Enemies : MonoBehaviour
     public int enemiesKilled;
     public GameObject[] spawnEnemies;
     public EnemyHandler[] prefabs;
+    private bool isPlayable;
     void Update()
     {
-
+        if (isPlayable)
+        {
+            StartCoroutine(STart());
+            isPlayable = false;
+        }
     }
     void Start()
     {
+        isPlayable = false;
+        StartCoroutine(Countdown());
+    }
+    IEnumerator STart()
+    {
+        cooldown = new WaitForSeconds(1);
         enemiesDied = false;
-        for (int j = 0; j < 3; j++)
+        for (int j = 0; j < nEnemyTypes; j++)
         {
             for (int i = 0; i < nEnemies; i++)
             {
@@ -26,17 +42,19 @@ public class Enemies : MonoBehaviour
                 EnemyHandler enemy = Instantiate(this.prefabs[j], this.transform);
                 enemy.killed += EnemyKilled;
                 enemy.transform.localPosition = spawnPoint.transform.position;
-                cooldown = new WaitForSeconds(1);
-                StartCoroutine("Cooldown");
+                yield return new WaitForSeconds(0.5f);
             }
         }
     }
     public void EnemyKilled()
     {
         enemiesKilled++;
-        if (enemiesKilled == nEnemies * 3)
+        if (level != 3)
         {
-            enemiesDied = true;
+            if (enemiesKilled == nEnemies * nEnemyTypes)
+            {
+                enemiesDied = true;
+            }
         }
         teleport.IsActive(enemiesDied);
     }
@@ -44,9 +62,16 @@ public class Enemies : MonoBehaviour
     {
         return spawnEnemies[Random.Range(0, spawnEnemies.Length)];
     }
-    IEnumerator Cooldown()
+    IEnumerator Countdown()
     {
-        yield return cooldown;
+        yield return new WaitForSeconds(1);
+        Lv.gameObject.SetActive(true);
+        yield return new WaitForSeconds(2);
+        START.gameObject.SetActive(true);
+        yield return new WaitForSeconds(1);
+        Lv.gameObject.SetActive(false);
+        START.gameObject.SetActive(false);
+        isPlayable = true;
     }
 }
 

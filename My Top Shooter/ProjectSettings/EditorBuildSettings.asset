@@ -9,9 +9,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Lv 2.unity
-    guid: 3ed8934740ad0fa4f854a3caf6a3e9eb
-  - enabled: 1
     path: Assets/Scenes/Quit.unity
     guid: 88abe2f1515678942b80f9b0bcb78910
+  - enabled: 1
+    path: Assets/Scenes/ReallyQuit.unity
+    guid: c00e66f1e60c5c243ad4e12ae417d7fb
+  - enabled: 1
+    path: Assets/Scenes/RealQuit.unity
+    guid: 31ac11f3e0f8e8448a731af37c56e35a
+  - enabled: 1
+    path: Assets/Scenes/Lv1.unity
+    guid: 73341669675e110419a0d921e79f3051
+  - enabled: 1
+    path: Assets/Scenes/Lv2.unity
+    guid: 3ed8934740ad0fa4f854a3caf6a3e9eb
+  - enabled: 1
+    path: Assets/Scenes/Lv3.unity
+    guid: 1a8b3f21f8e64344ca105b7ccae50e06
   m_configObjects: {}
