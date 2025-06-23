@@ -15,6 +15,7 @@ public class BulletHandler : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log($"Collision");
         if (isPlayer1)
         {
             if (collision.tag != "Player" || collision.tag != "Enemy2")

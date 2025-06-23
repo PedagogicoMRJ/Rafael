@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - WALL
+  - Player1
+  - Player2
   layers:
   - Default
   - TransparentFX
@@ -12,13 +14,13 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - WALL
+  - Player1
+  - Player2
+  - Bullet1
+  - Bullet2
+  - Enemy1
+  - Enemy2
   - 
   - 
   - 

@@ -6,13 +6,13 @@ public class PlayerHandler : MonoBehaviour
 {
     enum moveDir
     {
-        Right = 0,
-        RightDown = 7,
-        Down = 6,
+        Right = 2,
+        RightDown = 3,
+        Down = 4,
         LeftDown = 5,
-        Left = 4,
-        LeftUp = 3,
-        Up = 2,
+        Left = 6,
+        LeftUp = 7,
+        Up = 0,
         RightUp = 1,
     }
     moveDir currentDir;
@@ -41,13 +41,17 @@ public class PlayerHandler : MonoBehaviour
             moveInput.y = Input.GetAxis("Vertical1");
             if (Input.GetKey("space"))
                 fireInput = true;
+            else
+                fireInput = false;
         }
         else
         {
             moveInput.x = Input.GetAxis("Horizontal2");
             moveInput.y = Input.GetAxis("Vertical2");
-            if (Input.GetKey("enter"))
+            if (Input.GetKey("right shift"))
                 fireInput = true;
+            else
+                fireInput = false;
         }
         Movement();
         Fire();
@@ -73,18 +77,17 @@ public class PlayerHandler : MonoBehaviour
     {
         if (currentDir == moveDir.Right || currentDir == moveDir.Down || currentDir == moveDir.Left || currentDir == moveDir.Up)
         {
-            rig.velocity = new Vector2(moveInput.x, moveInput.y);
+            rig.velocity = new Vector2(moveInput.x, moveInput.y) * speed;
         }
         if (currentDir == moveDir.RightUp || currentDir == moveDir.RightDown || currentDir == moveDir.LeftDown || currentDir == moveDir.LeftUp)
         {
-            rig.velocity = new Vector2(moveInput.x, moveInput.y) * 0.7f;
+            rig.velocity = new Vector2(moveInput.x, moveInput.y) * 0.7f * speed;
         }
     }
     void Fire()
     {
-        if (fireCooldown >= 0.5f && fireInput == true)
+        if (fireCooldown >= 0.5f && fireInput == true && moveInput.magnitude != 0f)
         {
-            Debug.Log($"Fire");
             fireCooldown = 0f;
             GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
             int quadrant = (int)currentDir;
