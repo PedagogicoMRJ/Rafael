@@ -9,7 +9,6 @@ public class Enemies : MonoBehaviour
     public Text START;
     public int nEnemyTypes;
     public int level;
-    WaitForSeconds cooldown;
     public int nEnemies;
     public bool enemiesDied;
     public Teleport teleport;
@@ -32,7 +31,6 @@ public class Enemies : MonoBehaviour
     }
     IEnumerator STart()
     {
-        cooldown = new WaitForSeconds(1);
         enemiesDied = false;
         for (int j = 0; j < nEnemyTypes; j++)
         {

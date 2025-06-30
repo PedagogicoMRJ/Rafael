@@ -27,8 +27,10 @@ public class PlayerHandler : MonoBehaviour
     public float bulletSpeed;
     int fireAngle;
     Vector2 fireDir;
+    Animator anim;
     void Start()
     {
+        anim = GetComponent<Animator>();
         transform = GetComponent<Transform>();
         rig = GetComponent<Rigidbody2D>();
     }
@@ -95,5 +97,25 @@ public class PlayerHandler : MonoBehaviour
             fireDir = new Vector2(Mathf.Sin(fireAngle * Mathf.Deg2Rad), Mathf.Cos(fireAngle * Mathf.Deg2Rad));
             bullet.GetComponent<Rigidbody2D>().velocity = fireDir * bulletSpeed;
         }
+    }
+    private void OnTriggerEnter(Collider2D collison)
+    {
+        if (isPlayer1)
+        {
+            if (collison.tag == "Enemy1")
+            {
+                anim.SetTrigger("Die");
+                Destroy(gameObject, 1.8f);
+        }
+        }
+        else
+        {
+            if (collison.tag == "Enemy2")
+            {
+                anim.SetTrigger("Die");
+                Destroy(gameObject, 1.8f);
+            }
+        }
+
     }
 }
