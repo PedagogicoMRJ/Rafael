@@ -23,7 +23,7 @@ public class EnemyHandler : MonoBehaviour
         else
             playerPos = GameObject.FindGameObjectWithTag("Player2").GetComponent<Transform>();
         transform = GetComponent<Transform>();
-        //StartCoroutine(DisableCollision());
+        StartCoroutine(DisableCollision());
     }
 
     // Update is called once per frame
@@ -37,7 +37,7 @@ public class EnemyHandler : MonoBehaviour
     }
     void Follow()
     {
-        if (enemyRig.velocity.magnitude <= 5f - powerUp * 1.5)
+        if (enemyRig.velocity.magnitude <= 6f - powerUp * 1)
         {
             enemyRig.AddForce(targetDir * enemySpeed);
         }
@@ -46,7 +46,7 @@ public class EnemyHandler : MonoBehaviour
     {
         powerUp = (lv - 1) / 9;
     }
-    private void OnTriggerEnter(Collider2D collison)
+    private void OnTriggerEnter2D(Collider2D collison)
     {
         if (isEnemy1)
         {
@@ -58,8 +58,7 @@ public class EnemyHandler : MonoBehaviour
             }
             if (collison.tag == "Player1")
             {
-                anim.SetTrigger("Die");
-                Destroy(gameObject, 0.8f);
+                Destroy(gameObject);
             }
         }
         else
@@ -72,8 +71,7 @@ public class EnemyHandler : MonoBehaviour
             }
             if (collison.tag == "Player2")
             {
-                anim.SetTrigger("Die");
-                Destroy(gameObject, 0.8f);
+                Destroy(gameObject);
             }
         }
     }

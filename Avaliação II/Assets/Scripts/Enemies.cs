@@ -13,9 +13,11 @@ public class Enemies : MonoBehaviour
     int internalLevel;
     public EnemyHandler enemyHandler1;
     public EnemyHandler enemyHandler2;
+    public bool youWin;
     // Start is called before the first frame update
     void Start()
     {
+        youWin = false;
         internalLevel = 1;
         enemyHandler1.SetLevel(internalLevel);
         enemyHandler1.SetLevel(internalLevel);
@@ -31,6 +33,10 @@ public class Enemies : MonoBehaviour
             internalLevel++;
             StartCoroutine(Enemy());
         }
+        if (internalLevel == 10)
+        {
+            youWin = true;
+        }
     }
     IEnumerator Enemy()
     {
@@ -43,7 +49,6 @@ public class Enemies : MonoBehaviour
                 GameObject spawnPoint = GetRandomSpawnPoint();
                 EnemyHandler enemy = Instantiate(this.prefabs[j], spawnPoint.transform);
                 enemy.killed += EnemyKilled;
-               // enemy.transform.localPosition = spawnPoint.transform.position;
                 yield return new WaitForSeconds(0.5f);
             }
         }

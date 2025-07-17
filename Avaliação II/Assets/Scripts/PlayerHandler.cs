@@ -28,8 +28,10 @@ public class PlayerHandler : MonoBehaviour
     int fireAngle;
     Vector2 fireDir;
     Animator anim;
+    public bool isDead;
     void Start()
     {
+        isDead = false;
         anim = GetComponent<Animator>();
         transform = GetComponent<Transform>();
         rig = GetComponent<Rigidbody2D>();
@@ -98,7 +100,7 @@ public class PlayerHandler : MonoBehaviour
             bullet.GetComponent<Rigidbody2D>().velocity = fireDir * bulletSpeed;
         }
     }
-    private void OnTriggerEnter(Collider2D collison)
+    private void OnTriggerEnter2D(Collider2D collison)
     {
         if (isPlayer1)
         {
@@ -106,7 +108,8 @@ public class PlayerHandler : MonoBehaviour
             {
                 anim.SetTrigger("Die");
                 Destroy(gameObject, 1.8f);
-        }
+                isDead = true;
+            }
         }
         else
         {
@@ -114,6 +117,7 @@ public class PlayerHandler : MonoBehaviour
             {
                 anim.SetTrigger("Die");
                 Destroy(gameObject, 1.8f);
+                isDead = true;
             }
         }
 
